@@ -28,4 +28,4 @@ This project analyzes partner performance and identifies opportunities to improv
 [Streamlit Dashboard](https://partnerdata-caseanalysis-ds9denjqqeaa8gahwd3avg.streamlit.app/)
 
 ## GitHub Repository
-[View Source Code](YOUR_GITHUB_REPOSITORY_URL)
+[github repo](https://github.com/sarkar0069/partner_data-case_analysis)
