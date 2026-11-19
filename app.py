@@ -12,7 +12,6 @@ d, q = _d(), _q()
 
 tab0, tab1, tab2, tab3 = st.tabs(["Summary", "Part 1: Point structure & budget", "Part 2: Partner quality", "Data insights"])
 
-# ---------- Part 1 ----------
 with tab1:
     st.sidebar.header("Part 1 levers")
     r = {"Sun/Mon": st.sidebar.slider("Points/hr Sun & Mon", 0.0, 3.0, 1.5, 0.25),
@@ -49,7 +48,6 @@ with tab1:
     f.add_hline(y=0.9, line_dash="dash", line_color="red"); f.update_layout(yaxis_title="CPT (Rs)", xaxis_title="")
     st.plotly_chart(f, use_container_width=True)
 
-# ---------- Part 2 ----------
 with tab2:
     st.subheader("Partner Quality Score (0-100)")
     cfg = {}
@@ -76,7 +74,6 @@ with tab2:
 """)
     st.download_button("Download scored partners (CSV)", s.to_csv(index=False), "partner_scores.csv")
 
-# ---------- Insights ----------
 with tab3:
     st.subheader("What the data says")
     dow = d.groupby("dow").agg(hours=("hours", "mean"), tasks=("tasks", "mean"), partner_days=("pid", "size")).reset_index()
@@ -86,7 +83,6 @@ with tab3:
     t = d2.groupby("bucket").tasks.mean().reset_index()
     st.plotly_chart(px.bar(t, x="bucket", y="tasks", title="Avg tasks vs hours online: returns flatten after ~8-10 hrs"), use_container_width=True)
 
-# ---------- Summary ----------
 with tab0:
     st.markdown("""
 ### Approach in one page
