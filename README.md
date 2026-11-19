@@ -1,9 +1,9 @@
 # Business Analyst Case Study – Partner Performance Improvement
 
-## Project Overview
+## Assessment Overview
 This project analyzes partner performance and identifies opportunities to improve operational efficiency and business outcomes.
 
-## Tools & Technologies
+## Tools Used
 - Python
 - Pandas and NumPy
 - Excel
@@ -20,7 +20,7 @@ This project analyzes partner performance and identifies opportunities to improv
 
 ## Project Files
 - `app.py` – Interactive Streamlit dashboard
-- `partner_data.xlsx` – Dataset (subject to data-sharing permission)
+- `partner_data.xlsx` – Dataset
 - `analysis.ipynb` – Detailed analysis
 - `requirements.txt` – Python dependencies
 
